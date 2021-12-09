@@ -44,7 +44,7 @@ To get a list of available regions and zones you can use:
 ```make create-cluster```
 
 ### Create namepsace
-```make create-nc```
+```make create-ns```
 
 ### Check startup
 ```make list```  
