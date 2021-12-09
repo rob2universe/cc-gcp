@@ -1,6 +1,6 @@
 # cc-gcp
 
-The projects helps to setup CAMUNDA Cloud Self-Managed on Google CLoud Platform.
+The projects helps to setup CAMUNDA Cloud Self-Managed on Google Cloud Platform.
 
 
 ## Environment Setup
