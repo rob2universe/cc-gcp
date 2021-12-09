@@ -19,24 +19,26 @@ Create a project in Gcloud or make one accessible to your account (project admin
 
 Edit the [Makefile](/Makefile) and set the desired values for 
 
-namespace ?= your_pref_name
-region ?= your_region
-zone ?= your_zone
-project ?= your_project_id
-release ?= your_release_name
-valuesFile ?= Your_values_file (e.g. https://raw.githubusercontent.com/camunda-community-hub/zeebe-helm-profiles/master/zeebe-dev-profile.yaml)
-machineType ?= desired_machine_type (e.g. n2-standard-4)
-numNodes ?= desired_number_of_nodes
+- namespace ?= your_pref_name   
+- region ?= your_region   
+- zone ?= your_zone   
+- project ?= your_project_id   
+- release ?= your_release_name  
+- valuesFile ?= Your_values_file (e.g. https://raw.githubusercontent.com/camunda-community-hub/zeebe-helm-profiles/master/zeebe-dev-profile.yaml)  
+- machineType ?= desired_machine_type (e.g. n2-standard-4)  
+- numNodes ?= desired_number_of_nodes
 
-
-To get a list of available regions and zones you can use:
-```bash gcloud compute regions list```
+To get a list of available regions and zones you can use:  
+```bash gcloud compute regions list```   
 ```bash gcloud compute zones list```
 
-### Initalization
-```bash make create-ns```
-```bash make login```
+## One-time Initalization
+```bash make create-ns```  
+```bash make login```  
 ```bash make init-gcloud```    
+
+
+## Start, use and delete cluster
 
 ### Create Cluster
 ```make create-cluster```
