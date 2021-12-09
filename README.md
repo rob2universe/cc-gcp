@@ -46,6 +46,9 @@ To get a list of available regions and zones you can use:
 ### Create namepsace
 ```make create-ns```
 
+### Install CC Chart on Cluster
+```make zeebe```
+
 ### Check startup
 ```make list```  
 or  
