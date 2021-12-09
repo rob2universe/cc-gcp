@@ -29,13 +29,13 @@ Edit the [Makefile](/Makefile) and set the desired values for
 - numNodes ?= desired_number_of_nodes
 
 To get a list of available regions and zones you can use:  
-```bash gcloud compute regions list```   
-```bash gcloud compute zones list```
+```gcloud compute regions list```   
+```gcloud compute zones list```
 
 ## One-time Initalization
-```bash make create-ns```  
-```bash make login```  
-```bash make init-gcloud```    
+```make create-ns```  
+```make login```  
+```make init-gcloud```    
 
 
 ## Start, use and delete cluster
