@@ -65,3 +65,9 @@ or
 
 ### Check external ip of cluster
 ```make ip```
+
+### List disk
+```make disks```
+
+### Deleet all disks in zone in namespace
+```make delete-disks```
