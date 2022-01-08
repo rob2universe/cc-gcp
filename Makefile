@@ -134,4 +134,10 @@ list:
 	-kubectl get pod
 	-kubectl get svc
 
+.PHONY: disks
+disks:
+	-gcloud compute disks list --zones=$(zone) | grep $(namespace)
 
+.PHONY: delete-disks
+delete-disks:
+	-for diskid in $(gcloud compute disks list --zones=$(zone) | grep $(namespace) | awk '{print $$1}');do gcloud compute disk delete $$diskid --quiet; done
